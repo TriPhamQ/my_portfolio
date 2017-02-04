@@ -12,9 +12,8 @@ var	port = 8000;
 var app = express ();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
-app.use(express.static(path.join(__dirname, "./client/static")));
+app.use(express.static(path.join(__dirname, "./client")));
 app.use(express.static(path.join(__dirname, "./bower_components")));
-app.use(express.static(path.join(__dirname, "./server/config")));
 
 // Require MongoDB
 require('./server/config/mongoose.js');

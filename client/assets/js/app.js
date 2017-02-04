@@ -5,7 +5,7 @@ var myApp = angular.module('app', ['ngRoute', 'ngCookies']);
 myApp.config(function ($routeProvider) {
     $routeProvider
     .when('/', {
-        templateUrl: 'partials/homepage.html',
+        templateUrl: 'assets/partials/homepage.html',
         controller: ''
     })
     .otherwise({
